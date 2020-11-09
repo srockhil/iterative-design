@@ -2,17 +2,19 @@
 
 #title {
     text-align: center;
-    color: #ff5165;
+    color: #fd8d2d;
 }
 
 #title span {
     background-color: white;
-    padding: .2em;
+    border-radius: 10px;
+    padding: .4em;
     font-weight: bold;
+
 }
 
 h2 {
-    color: #ff5165;
+    color: #fd8d2d;
     font-weight: bolder !important;
     font-size: 3em;
 }
@@ -38,15 +40,15 @@ h4 {
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs {
-    color: #fc0c27;
+    color: greenyellow;
 }
 
 .btn-primary {
-    background-color: #ff5165 !important;
+    background-color: #fd8d2d !important;
 }
 
 .btn-primary:focus {
-    background-color: #fc0c27;
+    background-color: #fd8d2d;
 }
 
 #main-navbar {
@@ -54,15 +56,15 @@ h4 {
 }
 
 #main-navbar a.nav-link.active {
-    background-color: #ff5165;
+    background-color: #fd8d2d;
 }
 
 #header {
     height: 30vh;
-    background-color: #ff5165;
-    background-image: url("images/cacti.png");
+    background-color: #f58422;
+    background-image: url("images/graph.png");
     /*background-size: 100%;*/
-    background-size: 10em;
+    background-size: 25em;
     background-repeat: round;
     background-attachment: fixed;
 }
@@ -118,11 +120,11 @@ iframe {
 }
 
 a {
-    color: #ff5165;
+    color: #1101a7;
 }
 
 a:hover {
-    color: #fc0c27;
+    color:#fd8d2d;
 }
 
 ::selection {
