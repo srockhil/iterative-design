@@ -1,0 +1,138 @@
+/* Put your style information here! */
+
+#title {
+    text-align: center;
+    color: #ff5165;
+}
+
+#title span {
+    background-color: white;
+    padding: .2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ff5165;
+    font-weight: bolder !important;
+    font-size: 3em;
+}
+
+h3 {
+    font-weight: bold !important;
+    font-size: x-large;
+    margin-top: 1em;
+    margin-bottom: .2em;
+    color: dimgray;
+}
+
+h4 {
+    font-weight: 600 !important;
+    font-size: larger;
+    margin-top: .5em;
+    margin-bottom: .2em;
+    color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ff8291;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs {
+    color: #fc0c27;
+}
+
+.btn-primary {
+    background-color: #ff5165 !important;
+}
+
+.btn-primary:focus {
+    background-color: #fc0c27;
+}
+
+#main-navbar {
+    font-weight: 400;
+}
+
+#main-navbar a.nav-link.active {
+    background-color: #ff5165;
+}
+
+#header {
+    height: 30vh;
+    background-color: #ff5165;
+    background-image: url("images/cacti.png");
+    /*background-size: 100%;*/
+    background-size: 10em;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+.section-card {
+    margin-bottom: 2em;
+    border-radius: .5em;
+}
+
+#main-navbar {
+    top: 10em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: .5em;
+}
+
+#main-content {
+    margin-top: 2em;
+}
+
+.story-card {
+    margin-bottom: 1em;
+}
+
+.subject-card {
+    margin-bottom: 1em;
+}
+
+.badge-salm {
+    color: white;
+    background-color: #ff5165;
+}
+
+body {
+    position: relative
+}
+
+.iframe-div {
+    position: relative;
+    overflow: hidden;
+    /*width: 80vw;*/
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100%;
+}
+
+a {
+    color: #ff5165;
+}
+
+a:hover {
+    color: #fc0c27;
+}
+
+::selection {
+    background: #ff8291;
+}
+
+@media (min-width: 992px) {
+    .col-lg-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

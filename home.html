@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B Testing</title>
+    <!-- This project uses bootstrap and material design bootstrap -->
+    <script src="support/jquery-3.5.1.min.js"></script>
+    <script src="support/bootstrap.bundle.min.js"></script>
+    <script src="support/mdb.min.js"></script>
+    <link rel="stylesheet" href="support/bootstrap.min.css">
+    <link rel="stylesheet" href="support/mdb.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body data-spy="scroll" data-target="#main-navbar">
+    <div id="header" class="row align-items-center">
+      <div class="col  text-center">
+        <h1 id="title"><span>A/B Testing: Cactus Shop</span></h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-2 ml-lg-4">
+        <nav id="main-navbar" class="navbar navbar-light bg-white flex-column mt-4 sticky-top">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link active" href="#introduction">Introduction</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#interfaces">The Two Interfaces</a>
+            </nav>
+            <a class="nav-link active" href="#hypothesis">Hypotheses</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#completion">Time to Completion</a>
+              <a class="nav-link ml-3 my-1" href="#return">Return Rate</a>
+            </nav>
+            <a class="nav-link active" href="#collecting-data">Collecting Data</a>
+            <a class="nav-link" href="#results">Results Infographic</a>
+            <a class="nav-link" href="#broad-takeaways">Broad Takeaways</a>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="col-lg-9 offset-lg-1" id="main-content">
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="introduction" class="text-center">Introduction</h2>
+            <p>In this project I've set out to learn how A/B testing can tell us the effects our interface changes have
+            on the performance of our applications. To do this, I used the simple example of a website selling cacti.
+            Users were to add at least $150 worth of cacti to the cart and checkout. I decided to measure both time to
+            completion of the task, and the rate at which users returned to the home page from the cart. I created two
+            versions of the website to see their effect on these metrics, these two versions are shown below. Upon
+            visiting the site, users would be randomly taken to site A or B. Click the link below to get one of these
+            sites at random!</p>
+            <h3 id="interfaces">The Two Interfaces</h3>
+            <div class="row">
+              <div class="col">
+                <h4>Site A</h4>
+                <p>This version has the "Add To Cart" buttons to the right of the image along with "# in cart" wording
+                to display the quantity. The different cacti are also lacking titles.</p>
+                <img class="img-fluid" src="images/site_a.png" alt="Site A">
+              </div>
+              <div class="col">
+                <h4>Site B</h4>
+                <p>In this version the "Add To Cart" button is placed below the cacti, with "Quantity: " used as the
+                language to show quantity. There are also new titles above each type of cacti, specifying the type.</p>
+                <img class="img-fluid" src="images/site_b.png" alt="Site B">
+              </div>
+            </div>
+            <div class="text-center"><a href="https://sleepy-sierra-04997.herokuapp.com/" role="button" class="btn btn-primary">Live Site</a></div>
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="hypothesis" class="text-center">Hypotheses</h2>
+            <p>Before setting out to collect and analyze data, I wrote null hypothesis for each of my metrics. Our data
+            will let us know if we have disproven the null hypothesis and should therefore accept the alternative
+            hypothesis.</p>
+            <h3 id="completion">Time to Completion</h3>
+            <h4 style="font-weight: 400 !important;"><b>Null Hypothesis: </b>Interface B has no faster time to completion than interface A.</h4>
+            <h4 style="font-weight: 400 !important;"><b>Alternative Hypothesis: </b>Interface B has a faster time to completion than interface A.</h4>
+            <h4 class="text-center">Reasoning</h4>
+            <p>I think the added titles in site B, as well as the more easily stacked buttons, will make it easier to
+            quickly navigate site B, giving it a slight edge for time to completion.</p>
+            <p></p>
+            <h3 id="return">Return Rate</h3>
+            <h4 style="font-weight: 400 !important;"><b>Null Hypothesis: </b>Interface B has no lower return rate than interface A.</h4>
+            <h4 style="font-weight: 400 !important;"><b>Alternative Hypothesis: </b>Interface B has a lower return rate than interface A.</h4>
+            <h4 class="text-center">Reasoning</h4>
+            <p>I think the wording of "Quantity: " in interface B is less confusing and will help users be more
+            successful when adding items to their cart, and therefore will need to return from the cart less.</p>
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="collecting-data" class="text-center">Collecting Data</h2>
+            <p>Data was collected from 20 different users of the website. This data was stored in timed logs that
+            allowed me to see when users loaded each site, added items to the cart, viewed the cart, and returned to the
+            page. Using these logs I was then able to aggregate the data, analyze it, and come up with my conclusions.
+              An example of these logs is below. </p>
+            <img class="img-fluid" src="images/logs.png" alt="Logs">
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="results" class="text-center">Results Infographic</h2>
+            <p>Using the data from above I calculated the T-Score and P-Value of the time to completion and the Chi^2
+            and P-Value for the return rate of both versions (A & B) of the site. I summarized these results and
+            findings in the infographic below. For there to be a significant difference we were looking for a P-Value
+            less than 0.05. Therefore, for both time to completion and return rate, I did not find a significant
+            difference between sites A and B and therefore kept my null hypotheses.</p>
+            <img class="img-fluid" src="images/abtestinginfographic.jpg" alt="Infographic">
+          </div>
+        </div>
+
+        <div class="card section-card">
+          <div class="card-body">
+            <h2 id="broad-takeaways" class="text-center">Broad Takeaways</h2>
+            <p>In the end, I've concluded the following from doing this project:</p>
+            <ul>
+              <li>I definitely needed more users and was limited by having only 20. Had I had more users I think I may
+               have been able to conclude that there was a difference between the two interfaces.</li>
+              <li>I also feel we were limited in this assignment as our users were simply other user interface students,
+              meaning our results are fairly biased.</li>
+              <li>Although I wasn't able to come to an actual conclusion, Site B did average a shorter time to
+              completion which I do believe shows that that layout with titles and buttons creating more of a clear
+                grouping or card affordance was more intuitive to quickly use.</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </body>
+</html>
