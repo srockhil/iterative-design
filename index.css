@@ -46,12 +46,22 @@ h4 {
     color: greenyellow;
 }
 
-.btn-primary {
+.btn-color{
     background-color: #a78fdd !important;
+    color: white;
 }
 
-.btn-primary:focus {
-    background-color: #a78fdd;
+.btn-color:focus {
+    background-color: #9878dd !important;
+    color: white;
+}
+.btn-color:active {
+    background-color: #9878dd !important;
+    color: white;
+}
+
+.btn-color:hover {
+    color: white;
 }
 
 .sketch-image {
