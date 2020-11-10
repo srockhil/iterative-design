@@ -84,6 +84,9 @@ h4 {
     background-color: #a78fdd;
     height: 10vh;
 }
+.hifi-description {
+    height: 100%;
+}
 #main-navbar {
     font-weight: 400;
 }
