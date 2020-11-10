@@ -2,7 +2,7 @@
 
 #title {
     text-align: center;
-    color: #fd8d2d;
+    color: #a78fdd;
 }
 
 #title span {
@@ -14,7 +14,7 @@
 }
 
 h2 {
-    color: #fd8d2d;
+    color: #a78fdd;
     font-weight: bolder !important;
     font-size: 3em;
 }
@@ -44,11 +44,11 @@ h4 {
 }
 
 .btn-primary {
-    background-color: #fd8d2d !important;
+    background-color: #a78fdd !important;
 }
 
 .btn-primary:focus {
-    background-color: #fd8d2d;
+    background-color: #a78fdd;
 }
 
 #main-navbar {
@@ -56,12 +56,12 @@ h4 {
 }
 
 #main-navbar a.nav-link.active {
-    background-color: #fd8d2d;
+    background-color: #a78fdd;
 }
 
 #header {
     height: 30vh;
-    background-color: #f58422;
+    background-color: #a78fdd;
     background-image: url("images/graph.png");
     /*background-size: 100%;*/
     background-size: 25em;
@@ -124,11 +124,11 @@ a {
 }
 
 a:hover {
-    color:#fd8d2d;
+    color:#a78fdd;
 }
 
 ::selection {
-    background: #ff8291;
+    background: #a78fdd;
 }
 
 @media (min-width: 992px) {
