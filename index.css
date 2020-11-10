@@ -175,15 +175,15 @@ iframe {
 }
 
 a {
-    color: #1101a7;
+    color: #a78fdd;
 }
 
 a:hover {
-    color:#a78fdd;
+    color:#9878dd;
 }
 
 ::selection {
-    background: #a78fdd;
+    background: #ded1ff;
 }
 
 @media (min-width: 992px) {
@@ -205,4 +205,8 @@ a:hover {
     content: '<';
     font-size: 55px;
     color: #a78fdd;
+}
+
+table td {
+    font-weight: normal;
 }
