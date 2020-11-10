@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d8ad8f6-e71a-45a1-8e51-0cbdec2ef38e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/images/abtestinginfographic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cacti.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image_processing20200410-18222-1kum6j5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image_processing20200410-18222-1kum6j5.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/site_a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/site_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="7d8ad8f6-e71a-45a1-8e51-0cbdec2ef38e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +22,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7d8ad8f6-e71a-45a1-8e51-0cbdec2ef38e" name="Default Changelist" comment="" />
@@ -57,5 +50,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
