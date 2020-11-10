@@ -118,6 +118,12 @@ h4 {
     margin-bottom: 1em;
 }
 
+.link-btn {
+    background-color: #a78fdd;
+    color: white;
+    width: 50%;
+    border-radius: 7px;
+}
 .badge-salm {
     color: white;
     background-color: #ff5165;
